@@ -1,0 +1,81 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.menubalk {
+    background-color: #ffffff;
+    overflow: hidden;
+    z-index: 2; 
+    right: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.LogoHeader {
+    float: left;
+    width: 100px;
+    margin: 10px 30px 20px 20px;
+}
+
+.menuHeader {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.menuHeader li {
+    display: inline;
+    margin: 20px;
+}
+
+.menuItem {
+    text-decoration: none;
+    color: #0D625E;
+    font-weight: 700;
+}
+
+.menuItem:hover {
+    color: #8C805C;
+}
+
+.activeMenuItem {
+    text-decoration: none;
+    background-color: #ececec;
+    color: #0D625E;
+    font-weight: 700;
+    padding: 20px
+}
+.activeMenuItem:hover
+{
+    color: #8C805C;
+}
+
+header 
+{
+    background-image: url(img/Headerafbeelding.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+    color: #0D625E;
+    font-size: 40px;
+    font-weight: 700;
+    z-index: 1; 
+}
+footer
+{
+    background-color: #ececec;
+    background-size: cover;
+    height: 50px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+.LogoFooter
+{
+width: 100px;
+margin-bottom: 0;
+}
