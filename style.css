@@ -26,7 +26,7 @@ body {
     float: right;
 }
 
-.menuHeader li {
+.menuHeader li{
     display: inline;
     margin: 20px;
 }
