@@ -1,81 +1,171 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    margin-top: 20px;
-    padding: 0;
-}
-
-.menubalk {
-    background-color: #ffffff;
-    overflow: hidden;
-    z-index: 2; 
-    right: 0;
-    padding: 10px;
-    text-align: center;
-}
-
-.LogoHeader {
-    float: left;
-    width: 100px;
-    margin: 10px 30px 20px 20px;
-}
-
-.menuHeader {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    float: right;
-}
-
-.menuHeader li{
-    display: inline;
-    margin: 20px;
-}
-
-.menuItem {
-    text-decoration: none;
-    color: #0D625E;
-    font-weight: 700;
-}
-
-.menuItem:hover {
-    color: #8C805C;
-}
-
-.activeMenuItem {
-    text-decoration: none;
-    background-color: #ececec;
-    color: #0D625E;
-    font-weight: 700;
-    padding: 20px
-}
-.activeMenuItem:hover
-{
-    color: #8C805C;
-}
-
-header 
-{
-    background-image: url(img/Headerafbeelding.jpg);
-    background-size: cover;
-    background-position: center;
-    padding: 100px 0;
-    text-align: center;
-    color: #0D625E;
-    font-size: 40px;
-    font-weight: 700;
-    z-index: 1; 
-}
-footer
-{
-    background-color: #ececec;
-    background-size: cover;
-    height: 50px;
-    text-align: center;
+    font-family: 'Roboto', sans-serif;; 
+  }
+  
+  .logo_hoofding
+  {
+      display: flex;
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 70px;
+      margin: 0px 30px 20px 0px;
+      background-color: #ffffff;
+      padding: 20px;
+      padding-right: 100%;
+      z-index: 100;
+  }
+  .menu
+  {
+      display: flex;
+      position: fixed;
+      right: 50px;
+      top: 10px;
+      background-color: #ffffff;
+      right: 0;
+      text-align: center;
+      list-style-type: none;
+          color: #0D625E;
+      font-weight: 700;
+      padding: 20px 0px 20px 0px;
+      text-decoration: none;
+      font-size: 14px;
+    z-index: 100;
+  }
+  
+  
+  .menu_item{
+      color: #0D625E;
+      font-weight: 700;
+      padding: 0px 20px 0px 20px ;
+      list-style-type: none;
+      margin-top: 0px;
+      text-decoration: none;
+  
+  }
+  .menu_item:hover {
+      color: #8C805C;
+      text-decoration: none;
+  }
+  
+  .active_menu_item{
+      list-style-type: none;
+      background-color: #ececec;
+      color: #0D625E;
+      font-weight: 700;
+      padding: 20px;
+      text-decoration: none;
+  }
+  .active_menu_item:hover 
+  {
+  color: #8C805C;
+  text-decoration: none;
+  }
+  
+  .header {
     padding: 20px;
-    margin-top: 20px;
+    
+      background-image: url(img/Headerafbeelding.jpg);
+      background-size: cover;
+      background-position: center;
+      padding: 100px 0;
+      text-align: center;
+      color: #0D625E;
+      font-size: 40px;
+      font-weight: 700;
+      z-index: 10; 
+      margin-top: 80px;
+      margin-bottom: 50px;
+  }
+h2{
+    font-size: 18px;
+    font-weight: 700;
+    color: #0D625E;
 }
-.LogoFooter
+  p{
+    font-size: 14px;
+    color: #062825;
+  }
+  .flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex-container >div{
+    max-width: 50%;
+  }
+  .flex-link{
+    padding: 10px 100px;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex-container >hr{
+    border: #062825 solid 3px;
+  }
+  
+  .flex-text {
+    padding: 20px;
+  }
+
+  .flex-image 
+  {
+    padding: 20px;
+
+  }
+  .flex-image >img{
+
+    max-height: 400px;
+    border-radius: 5%;
+  }
+
+  .image_border
 {
-width: 100px;
-margin-bottom: 0;
+  max-width: 33%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
+hr
+{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.flex-link >a:link
+{
+  background-color: #0D625E;
+  border-radius: 15px;
+  color: #ffffff;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+.flex-link >a:visited
+{
+  background-color: #0D625E;
+  border-radius: 15px;
+  color: #ffffff;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+.flex-link >a:hover
+{
+  background-color:#8C805C ;
+  border-radius: 15px;
+  color: white;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+
+.footer {
+
+    background-color: #ececec;
+      background-size: cover;
+      height: 50px;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+  }
+  .LogoFooter
+  {
+  width: 100px;
+  margin-bottom: 0;
+  }

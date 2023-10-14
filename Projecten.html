@@ -10,25 +10,38 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-
 </head>
 <body>
-    <div class="menubalk">
-        <img class="LogoHeader" src="img/Logo/LogoSJ_geenachtergrond.png" alt="Logo" title="LogoSarahJanssen">
-        <ul class="menuHeader">
-            <li> <a class="menuItem" href="index.html">Home</a></li>
-            <li> <a class="menuItem" href="CV.html">CV</a></li>
-            <li> <a class="activeMenuItem" href="Projecten.html">Projecten</a></li>
-            <li> <a class="menuItem" href="OverMij.html">Over mij</a></li>
-            <li> <a class="menuItem" href="Contact.html">Contact</a></li>
-        </ul>
+    <div>
+        <img class="logo_hoofding" src="img/Logo/LogoSJ_geenachtergrond.png" alt="logohoofding">
     </div>
+    <nav class="menu">
+            <div> <a class="menu_item" href="index.html">Home</a></div>
+            <div> <a class="menu_item" href="cv.html">CV</a></div>
+            <div> <a class="active_menu_item" href="projecten.html">Projecten</a></div>
+            <div> <a class="menu_item" href="over_mij.html">Over mij</a></div>
+            <div> <a class="menu_item" href="contact.html">Contact</a></div>
+    </nav>
+        <div class="header">Projecten</div>
 
-    <header><h1>Projecten</h1></header>
+        <div class="flex-container">
+            <div class="flex-image"><img src="img/SQL_project2_pizza.png" alt="pizza" title="pizza"></div>
+        <div class="flex-text">
+            <h2>Eerste project</h2>
+            <p>Mijn allereerste project betekende meteen een sprong in het diepe. Als nieuwkomer in de IT-wereld, en met mijn instap middenin het academiejaar, was het een behoorlijke uitdaging om mijn weg te vinden. De onzekerheid en het onbekende maakte het er niet makkelijker op. Toch was ik vastberaden om door te zetten en er volop voor te gaan. Naarmate ik meer en meer oefende, vond ik uiteindelijk de weg om een mooi eerste project neer te zetten. </p></div>     
+        
+        
+        <div class="flex-text">
+            <h2>Project Pizza</h2><p>Dit project betreft het omzetten van een bestaand ERD-schema naar een SQL-database voor een fictief pizzabedrijf. De opdracht omvat het vertalen van het ERD-diagram naar een SQL-script voor het aanmaken van de tabellen, waarbij alle elementen in het datamodel worden aangegeven, zoals het datatype, FK/PK en NULL/NOT NULL constraints. Het script dropt eerst alle tabellen en maakt ze daarna opnieuw aan, zodat het meerdere keren kan worden uitgevoerd. Ik maakte ook een schema aan om de tabellen in te plaatsen. Verder moesten verschillende records worden ingevuld voor elke tabel, inclusief de associatie-entiteiten. Het INSERT-INTO-statement wordt gebruikt om deze records toe te voegen. Dit project is een eerste praktijkervaring in het gebruik van SQL Server Management Studio en het omzetten van een ERD-schema naar een SQL-database.</p></div>
+            <div class="flex-image"><img src="img/SQL_project.png" alt="sql-project" title="sql-project"></div>
+        
+    </div>
+        
+        
+        <div class="footer">
+            <img class="LogoFooter" src="img/Logo/LogoSJ_geenachtergrond.png" alt="LogoFooter" title="LogoFooter">
+        </div>
     
-
-    <footer>
-        <img class="LogoFooter" src="/img/Logo/LogoSJ_geenachtergrond.png" alt="LogoFooter" title="LogoFooter">
-    </footer>
 </body>
 </html>
+
