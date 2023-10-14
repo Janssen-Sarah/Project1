@@ -1,7 +1,11 @@
+/* Basisopmaak */
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    margin: auto;
 }
 
+/* Header */
 .logo_hoofding {
     display: flex;
     position: fixed;
@@ -75,6 +79,7 @@ body {
     margin-bottom: 50px;
 }
 
+/* Tekstopmaak */
 h2 {
     font-size: 18px;
     font-weight: 700;
@@ -86,6 +91,7 @@ p {
     color: #062825;
 }
 
+/* Flexbox-opmaak */
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -95,12 +101,6 @@ p {
 
 .flex-container > div {
     max-width: 50%;
-}
-
-.flex-link {
-    padding: 10px 100px;
-    justify-content: center;
-    align-items: center;
 }
 
 .flex-container > hr {
@@ -126,35 +126,7 @@ p {
     margin-bottom: 20px;
 }
 
-.flex-link > a:link {
-    background-color: #0D625E;
-    border-radius: 15px;
-    color: #ffffff;
-    padding: 5px 20px;
-    text-decoration: none;
-}
-
-.flex-link > a:visited {
-    background-color: #0D625E;
-    border-radius: 15px;
-    color: #ffffff;
-    padding: 5px 20px;
-    text-decoration: none;
-}
-
-.flex-link > a:hover {
-    background-color: #8C805C;
-    border-radius: 15px;
-    color: white;
-    padding: 5px 20px;
-    text-decoration: none;
-}
-
-.break-image {
-    width: 15px;
-    margin: 20px 50%;
-}
-
+/* Footer */
 .footer {
     background-color: #ececec;
     background-size: cover;
@@ -169,6 +141,7 @@ p {
     margin-bottom: 0;
 }
 
+/* Formulier en contactinformatie */
 label, textarea, legend {
     vertical-align: top;
     color: #0D625E;
@@ -221,75 +194,119 @@ form {
     margin-left: 47%;
     margin-right: 47%;
 }
-.cv-link > a:link {
-  align-items: center;
-  justify-content: center;
-  background-color: #0D625E;
-  border-radius: 15px;
-  color: #ffffff;
-  padding: 5px 20px;
-  text-decoration: none;
+
+/* Link-opmaak */
+.flex-link {
+    padding: 10px 100px;
+    justify-content: center;
+    align-items: center;
 }
+
+.flex-link > a:link {
+    background-color: #0D625E;
+    border-radius: 15px;
+    color: #ffffff;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+.flex-link > a:visited {
+    background-color: #0D625E;
+    border-radius: 15px;
+    color: #ffffff;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+
+.flex-link > a:hover {
+    align-items: center;
+    justify-content: center;
+    background-color: #8C805C;
+    border-radius: 15px;
+    color: white;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+
+.cv-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.cv-link > a:link {
+    align-items: center;
+    justify-content: center;
+    background-color: #0D625E;
+    border-radius: 15px;
+    color: #ffffff;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+
 .cv-link > a:visited {
-  align-items: center;
-  justify-content: center;
-  background-color: #0D625E;
-  border-radius: 15px;
-  color: #ffffff;
-  padding: 5px 20px;
-  text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #0D625E;
+    border-radius: 15px;
+    color: #ffffff;
+    padding: 5px 20px;
+    text-decoration: none;
 }
 
 .cv-link > a:hover {
-  align-items: center;
-  justify-content: center;
-  background-color: #8C805C;
-  border-radius: 15px;
-  color: white;
-  padding: 5px 20px;
-  text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #8C805C;
+    border-radius: 15px;
+    color: white;
+    padding: 5px 20px;
+    text-decoration: none;
 }
-table
-{  
-  border-collapse: 0px;
+
+/* Tabelopmaak */
+table {
+    border-collapse: 0px;
     border-radius: 25px;
     min-width: 500px;
     margin: 30px;
-    flex-basis: calc(50% - 20px); 
+    flex-basis: calc(50% - 20px);
 }
-th
-{
-  color: #8C805C;
+
+th {
+    color: #8C805C;
     border: solid 1px #0D625E;
     padding: 10px;
     margin: 10px;
     border-radius: 25px;
     text-align: center;
 }
-td
-{
-color: #062825;
-  background-color: #ececec;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 25px;
-  text-align: center;
+
+td {
+    color: #062825;
+    background-color: #ececec;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
+    text-align: center;
 }
-.flex-table
-{
+
+.flex-table {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-caption
-{
-  font-size: 18px;
-  font-weight: 700;
-  color: #0D625E;
+
+caption {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0D625E;
 }
-.cv-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
+
+/* Overige opmaak */
+.break-image
+{
+    max-width: 20px;
+    margin-left: 50%;
+    margin-right: 50%;
 }
