@@ -19,13 +19,27 @@ body {
     z-index: 100;
 }
 
+.header {
+    padding: 20px;
+    background-image: url(img/Headerafbeelding.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+    color: #0D625E;
+    font-size: 40px;
+    font-weight: 700;
+    z-index: 10;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
 .menu {
     display: flex;
     position: fixed;
     right: 50px;
     top: 10px;
     background-color: #ffffff;
-    right: 10;
     text-align: center;
     list-style-type: none;
     color: #0D625E;
@@ -103,19 +117,9 @@ body {
     text-align: left; 
 }
 
-.header {
-    padding: 20px;
-    background-image: url(img/Headerafbeelding.jpg);
-    background-size: cover;
-    background-position: center;
-    padding: 100px 0;
-    text-align: center;
-    color: #0D625E;
-    font-size: 40px;
-    font-weight: 700;
-    z-index: 10;
-    margin-top: 80px;
-    margin-bottom: 50px;
+.break-dropdown {
+    max-width: 25px;
+padding-left: 30px;
 }
 
 /* Tekstopmaak */
@@ -134,6 +138,10 @@ h3 {
 p {
     font-size: 14px;
     color: #062825;
+}
+hr
+{
+    border: none;
 }
 
 /* Flexbox-opmaak */
@@ -334,7 +342,6 @@ form {
 
 /* Tabelopmaak */
 table {
-    border-collapse: 0px;
     border-radius: 25px;
     min-width: 500px;
     margin: 30px;
@@ -371,6 +378,13 @@ caption {
     color: #0D625E;
 }
 
+/* Lijstopmaak */
+.plantenlijst {
+    font-size: 14px;
+    color: #062825;
+    list-style-type:circle ;
+}
+
 /* Overige opmaak */
 .break-image
 {
@@ -386,3 +400,6 @@ caption {
     text-decoration: none;
 }
 
+.break-dropdown{
+max-width: 10px;
+}
