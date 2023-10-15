@@ -166,6 +166,22 @@ p {
     border-radius: 5%;
 }
 
+.flex-container a:link {
+    text-decoration: none;
+    color: #0D625E;
+    text-align: center;
+}
+.flex-container a:visited {
+    text-decoration: none;
+    color: #0D625E;
+    text-align: center;
+}
+.flex-container a:hover {
+    text-decoration: none;
+    color: #8C805C;
+    text-align: center;
+}
+
 .image_border {
     max-width: 33%;
     margin-top: 20px;
@@ -362,3 +378,11 @@ caption {
     margin-left: 50%;
     margin-right: 50%;
 }
+
+.project-overzicht {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
