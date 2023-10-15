@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,9 +17,17 @@
             <img class="logo_hoofding" src="img/Logo/LogoSJ_geenachtergrond.png" alt="logohoofding">
         </div>
         <nav class="menu">
-            <div><a class="active_menu_item" href="index.html">Home</a></div>
+            <div><a class="menu_item" href="active_index.html">Home</a></div>
             <div><a class="menu_item" href="cv.html">CV</a></div>
-            <div><a class="menu_item" href="projecten.html">Projecten</a></div>
+            <div class="menu_dropdown">
+                <a class="menu_item" href="projecten.html">Projecten</a>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="project_pizza.html">Pizza in SQL</a></li>
+                        <li><a href="project_wordpress.html">Wordpress</a></li>
+                    </ul>
+                </div>
+            </div>
             <div><a class="menu_item" href="over_mij.html">Over mij</a></div>
             <div><a class="menu_item" href="contact.html">Contact</a></div>
         </nav>
@@ -79,7 +87,8 @@
     <footer class="footer">
         <img class="LogoFooter" src="img/Logo/LogoSJ_geenachtergrond.png" alt="LogoFooter" title="LogoFooter">
         <br>
-        <a class="back-to-top" href="index.html"><img src="img/up-arrow.png" alt="up" title="up" ></a>
+    <!--Back to top-->    
+        <a class="back-to-top" href="projecten.html"><img src="img/up-arrow.png" alt="up" title="up" ></a>
     </footer>
 </body>
 </html>

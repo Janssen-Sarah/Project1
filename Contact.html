@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,22 +11,36 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <div>
-        <img class="logo_hoofding" src="img/Logo/LogoSJ_geenachtergrond.png" alt="logohoofding">
-    </div>
-    <nav class="menu">
-            <div> <a class="menu_item" href="index.html">Home</a></div>
-            <div> <a class="menu_item" href="cv.html">CV</a></div>
-            <div> <a class="menu_item" href="projecten.html">Projecten</a></div>
-            <div> <a class="menu_item" href="over_mij.html">Over mij</a></div>
-            <div> <a class="active_menu_item" href="contact.html">Contact</a></div>
-    </nav>
-        <h1 class="header">Contact</h1>
-<p class="contact">Wil je meer weten of heb je vragen? Neem dan contact op met mij.</p>
-        <div class="flex-container">
+   
+    <!-- Header -->
+    <header>
+        <div>
+            <img class="logo_hoofding" src="img/Logo/LogoSJ_geenachtergrond.png" alt="logohoofding">
+        </div>
+        <nav class="menu">
+            <div><a class="menu_item" href="index.html">Home</a></div>
+            <div><a class="menu_item" href="cv.html">CV</a></div>
+            <div class="menu_dropdown">
+                <a class="menu_item" href="projecten.html">Projecten</a>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="project_pizza.html">Pizza in SQL</a></li>
+                        <li><a href="project_wordpress.html">Wordpress</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div><a class="menu_item" href="over_mij.html">Over mij</a></div>
+            <div><a class="active_menu_item" href="contact.html">Contact</a></div>
+        </nav>
+        <div class="header">Contact</div>
+    </header>
 
-                    <form action="https://tm-statweb.be/forms.php" method="POST">
+<p class="contact">Wil je meer weten of heb je vragen? Neem dan contact op met mij.</p>
+      
+    <!--Contactformulier-->
+    <div class="flex-container">
+
+            <form action="https://tm-statweb.be/forms.php" method="POST">
                 <div>
                     <label for="naam">Naam: <br>
                         <input type="text" id="naam" name="naam" required ></label>
@@ -38,7 +52,7 @@
                 </div>
 
                 <div>
-                    <label for="Onderwerp">Onderwerp: <br>
+                    <label for="onderwerp">Onderwerp: <br>
                         <input type="text" id="onderwerp" name="onderwerp" required ></label>
                 </div>
         
@@ -58,21 +72,23 @@
                     <input id="submitbutton" type="submit" value="Verzenden">
                 </div>
             </form> 
-            
+
+    <!--Contactgegevens-->            
         <div class="contact"><img id="logo_contact" src="img/Logo/LogoSJ_geenachtergrond.png" alt="logo" title="logo">
-        <br><br>
-        <a href="http://github.com/Janssen-Sarah" target="_blank"><img class="contact_icon" src="img/contact/github-mark.png" alt="Github" title="github"></a>
-        <a href="http://www.linkedin.com/in/sarah-janssen-27566a266/" target="_blank"><img class="contact_icon" src="img/contact/LI-In-Bug.png" alt="LinkedIn" title="LinkedIn"></a>
-        <a href="mailto:janssen.sarah1991@gmail.com" target="_blank"><img class="contact_icon" src="img/contact/email.png" alt="email" title="email"></a> <br>
-        <a href="https://maps.app.goo.gl/e8Cc7HoU2hcJNhp16" target="_blank"><img id="google_maps" src="img/contact/Google_maps.png" alt="Google_maps" title="Google_maps"></a>
+            <br><br>
+            <a href="http://github.com/Janssen-Sarah" target="_blank"><img class="contact_icon" src="img/contact/github-mark.png" alt="Github" title="github"></a>
+            <a href="http://www.linkedin.com/in/sarah-janssen-27566a266/" target="_blank"><img class="contact_icon" src="img/contact/LI-In-Bug.png" alt="LinkedIn" title="LinkedIn"></a>
+            <a href="mailto:janssen.sarah1991@gmail.com" target="_blank"><img class="contact_icon" src="img/contact/email.png" alt="email" title="email"></a> <br>
+            <a href="https://maps.app.goo.gl/e8Cc7HoU2hcJNhp16" target="_blank"><img id="google_maps" src="img/contact/Google_maps.png" alt="Google_maps" title="Google_maps"></a>
+        </div>
     </div>
-</div>
         
     <!-- Footer -->
     <footer class="footer">
         <img class="LogoFooter" src="img/Logo/LogoSJ_geenachtergrond.png" alt="LogoFooter" title="LogoFooter">
         <br>
-        <a class="back-to-top" href="contact.html"><img src="img/up-arrow.png" alt="up" title="up" ></a>
+    <!--Back to top-->    
+        <a class="back-to-top" href="projecten.html"><img src="img/up-arrow.png" alt="up" title="up" ></a>
     </footer>
 </body>
 </html>

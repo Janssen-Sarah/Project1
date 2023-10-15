@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,18 +11,30 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class= "grid-container-2kolommen">
-    <div>
-        <img class="logo_hoofding" src="img/Logo/LogoSJ_geenachtergrond.png" alt="logohoofding">
-    </div>
-    <nav class="menu">
-            <div> <a class="menu_item" href="index.html">Home</a></div>
-            <div> <a class="active_menu_item" href="cv.html">CV</a></div>
-            <div> <a class="menu_item" href="projecten.html">Projecten</a></div>
-            <div> <a class="menu_item" href="over_mij.html">Over mij</a></div>
-            <div> <a class="menu_item" href="contact.html">Contact</a></div>
-    </nav>
-        <h1 class="header">Curriculum Vitae</h1>
+    <!-- Header -->
+    <header>
+        <div>
+            <img class="logo_hoofding" src="img/Logo/LogoSJ_geenachtergrond.png" alt="logohoofding">
+        </div>
+        <nav class="menu">
+            <div><a class="menu_item" href="index.html">Home</a></div>
+            <div><a class="active_menu_item" href="cv.html">CV</a></div>
+            <div class="menu_dropdown">
+                <a class="menu_item" href="projecten.html">Projecten</a>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="project_pizza.html">Pizza in SQL</a></li>
+                        <li><a href="project_wordpress.html">Wordpress</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div><a class="menu_item" href="over_mij.html">Over mij</a></div>
+            <div><a class="menu_item" href="contact.html">Contact</a></div>
+        </nav>
+        <div class="header">Curriculum Vitae</div>
+    </header>
+
+    <!--Tabellen-->
         <div class="flex-table">
         <div class="table">
             <table> 
@@ -81,15 +93,14 @@
             </table>
  <div class="cv-link"><a  href="img/Curriculumvitae_website.pdf" target="_blank">Bekijk mijn volledige CV</a></div>
         </div>
-        </div>
-
-       
+        </div>      
     
-    <!-- Footer -->
-    <footer class="footer">
-        <img class="LogoFooter" src="img/Logo/LogoSJ_geenachtergrond.png" alt="LogoFooter" title="LogoFooter">
-        <br>
-        <a class="back-to-top" href="cv.html"><img src="img/up-arrow.png" alt="up" title="up" ></a>
-    </footer>
+        <!-- Footer -->
+        <footer class="footer">
+            <img class="LogoFooter" src="img/Logo/LogoSJ_geenachtergrond.png" alt="LogoFooter" title="LogoFooter">
+            <br>
+        <!--Back to top-->    
+            <a class="back-to-top" href="projecten.html"><img src="img/up-arrow.png" alt="up" title="up" ></a>
+        </footer>
 </body>
 </html>
