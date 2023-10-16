@@ -80,38 +80,46 @@ body {
 }
 
 /* Dropdown */
-.menu_dropdown .dropdown {
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+.dropdown-content {
     display: none;
     position: absolute;
-    top: 40px;
-    background-color: #ffffff;
+    background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 20px 0px;
+    z-index: 1;
 }
-
-.menu_dropdown:hover .dropdown {
+  
+.dropdown:hover .dropdown-content {
     display: block;
 }
 
-.menu_dropdown .dropdown a:link {
-    color: #0D625E;
-    text-decoration: none;
+.break-dropdown {
+    width: 15px;
+    margin-top: 20px;
 }
 
-.menu_dropdown .dropdown a:visited {
-    color: #0D625E;
+.dropdown-content div a:link {
     text-decoration: none;
+    color: #0D625E;
 }
-
-.menu_dropdown .dropdown a:hover {
+.dropdown-content div a:visited {
+    text-decoration: none;
+    color: #0D625E;
+}
+.dropdown-content div a:hover {
+    text-decoration: none;
     color: #8C805C;
-    text-decoration: none;
 }
-
-.menu_dropdown .dropdown ul li {
-    list-style-type: none;
-    text-align: left; 
+.dropdown-content div {
+padding: 5px;
 }
+    
 
 /* Tekstopmaak */
 h2 {
@@ -191,7 +199,7 @@ hr
 .footer {
     background-color: #ececec;
     background-size: cover;
-    height: 50px;
+    height: 70px;
     text-align: center;
     padding: 20px;
     margin-top: 20px;   
@@ -206,6 +214,13 @@ hr
 .back-to-top >img
 {
     max-width: 20px;
+}
+
+.copy {
+    text-align: right;
+    padding-bottom: 5px;
+    color: #8C805C;
+    font-size: 12px;
 }
 
 /* Formulier en contactinformatie */
