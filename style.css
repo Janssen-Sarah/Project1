@@ -406,3 +406,10 @@ caption {
     text-decoration: none;
 }
 
+iframe
+{
+    max-height: 200px;
+    max-width: 350px;
+    border-radius: 25px;
+}
+
